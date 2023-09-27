@@ -1,0 +1,833 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NFT Marketplace </title>
+    <link rel="stylesheet" href="./style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <!--navbar, burgermenu-->
+    <nav class="navbar navbar-expand-lg navbar-dark p-4">
+        <div class="container-fluid">
+            <a class="navbar-brand text-white" href="https://nft-home-page-kappa.vercel.app/">
+                <img src="./Storefront.png">
+                NFT Marketplace
+            </a>
+            <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#nav1">
+                <span>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M3 12C3 11.5858 3.33579 11.25 3.75 11.25H20.25C20.6642 11.25 21 11.5858 21 12C21 12.4142 20.6642 12.75 20.25 12.75H3.75C3.33579 12.75 3 12.4142 3 12Z" fill="white"/>
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M3 6C3 5.58579 3.33579 5.25 3.75 5.25H15C15.4142 5.25 15.75 5.58579 15.75 6C15.75 6.41421 15.4142 6.75 15 6.75H3.75C3.33579 6.75 3 6.41421 3 6Z" fill="white"/>
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M3 18C3 17.5858 3.33579 17.25 3.75 17.25H15C15.4142 17.25 15.75 17.5858 15.75 18C15.75 18.4142 15.4142 18.75 15 18.75H3.75C3.33579 18.75 3 18.4142 3 18Z" fill="white"/>
+                      </svg>
+                </span>
+            </button>
+    
+            <div class="collapse navbar-collapse" id="nav1">
+                <ul class="navbar-nav ms-auto gap-4 align-items-center">
+                    <li class="nav-item me-auto">
+                        <a href="#" class="nav-link marketplace text-white">
+                            Marketplace
+                        </a>
+                    </li>
+                    <li class="nav-item me-auto">
+                        <a href="#" class="nav-link text-white">
+                            Rankings
+                        </a>
+                    </li>
+                    <li class="nav-item me-auto">
+                        <a href="#" class="nav-link text-white">
+                            Connect a wallet
+                        </a>
+                    </li>
+    
+                    <a href="https://nft-sign-up-page.vercel.app/" class="me-auto">
+                        <button type="button" class="button_navigation gap-2">
+                            <img src="./User.png" style="background: none;">
+                            Sign Up
+                        </button>
+                    </a>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!--Input, Texts-->
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col-md-12 col-12">
+                <h2 class="h2_browse mt-3">Browse Marketplace</h2>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12 col-12">
+                <p class="P_browse pt-2">Browse through more than 50k NFTs on the NFT Marketplace.</p>
+            </div>
+        </div>
+        <div class="row mt-3">
+            <div class="col-md-12 col-12">
+                <form class="position-relative input_form">
+                    <input type="search" placeholder="Search your favourite NFTs" class="form-control form-control-lg">
+                    <button type="submit" class="search_button">
+                        <i class="fa fa-search" aria-hidden="true"></i>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- Border -->
+    <div class="container-fluid mt-5">
+        <hr class="Line_full">
+    </div>
+    <!--nft,Collection BADGE Fot DESKTOP -->
+    <div class="container d-md-block d-none">
+        <div class="row mt-5">
+            <div class="col-md-6">
+                <div class="text-center">
+                    <button type="button" class="btn_text">
+                        NFTs
+                        <span class="badge_302 badge badge-secondary ms-2">302</span>
+                    </button>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="text-center">
+                    <button type="button" class="btn_text2">
+                        Collections
+                        <span class="badge_67 badge badge-secondary ms-2">67</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="row mt-2">
+            <div class="col-md-6 col-6 border-top border-secondary"></div>
+        </div>        
+    </div>
+    
+    <!-- nft and collection for MOBILE -->
+    <div class="container d-block d-md-none">
+        <div class="row">
+            <div class="col-6">
+                <div class="text-center">
+                    <button type="button" class="btn_text">
+                        NFTs
+                    </button>
+                </div>
+            </div>
+            <div class="col-6">
+                <div>
+                    <button type="button" class="btn_text2">
+                        Collections
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-5 border-top border-secodanry mt-4 ms-4">
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Cards Row N1 For DESKTOP -->
+    <div class="container-fluid pt-5"
+    style="background: hsla(0, 0%, 23%, 1);" >
+        <div class="container d-md-block d-none">
+            <div class="row mt-5">
+                <div class="col-md-4">
+                    <div class="card card_1">
+                        <img src="./card_ph1.png">
+                        <div class="card-body ps-4">
+                            <h4 class="card-title title2 pt-2">Magic Mushroom 0325</h4>
+                            <div class="d-flex gap-3 mt-3">
+                                <img src="./mini_pro1.png">
+                                <p class="card-text card_text">Shroomie</p>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div>
+                                        <p class="mb-2 pt-4 card_price">Price</p>
+                                        <p class="price_e">1.63 ETH</p>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 text-end pe-3">
+                                    <div>
+                                        <p class="mb-2 pt-4 card_price">Highest Bid</p>
+                                        <p class="price_e">0.33 wETH</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card card_1">
+                        <img src="./card_ph2.png">
+                        <div class="card-body ps-4">
+                            <h4 class="card-title title2 pt-2">Happy Robot 032</h4>
+                            <div class="d-flex gap-3 mt-3">
+                                <img src="./mini_pro-2-3.png">
+                                <p class="card-text card_text">BeKind2Robots</p>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div>
+                                        <p class="mb-2 pt-4 card_price">Price</p>
+                                        <p class="price_e">1.63 ETH</p>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 text-end pe-3">
+                                    <div>
+                                        <p class="mb-2 pt-4 card_price">Highest Bid</p>
+                                        <p class="price_e">0.33 wETH</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card card_1">
+                        <img src="./card_ph3.png">
+                        <div class="card-body ps-4">
+                            <h4 class="card-title title2 pt-2">Happy Robot 024</h4>
+                            <div class="d-flex gap-3 mt-3">
+                                <img src="./mini_pro-2-3.png">
+                                <p class="card-text card_text">BeKind2Robots</p>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div>
+                                        <p class="mb-2 pt-4 card_price">Price</p>
+                                        <p class="price_e">1.63 ETH</p>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 text-end pe-3">
+                                    <div>
+                                        <p class="mb-2 pt-4 card_price">Highest Bid</p>
+                                        <p class="price_e">0.33 wETH</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    
+        <!-- Cards Row N2 For DESKTOP -->
+            <div class="row mt-5">
+                <div class="col-md-4">
+                    <div class="card card_1">
+                        <img src="./card_ph4.png">
+                        <div class="card-body ps-4">
+                            <h4 class="card-title title2 pt-2">Designer Bear</h4>
+                            <div class="d-flex gap-3 mt-3">
+                                <img src="./mini_pro4.png">
+                                <p class="card-text card_text">Mr Fox</p>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div>
+                                        <p class="mb-2 pt-4 card_price">Price</p>
+                                        <p class="price_e">1.63 ETH</p>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 text-end pe-3">
+                                    <div>
+                                        <p class="mb-2 pt-4 card_price">Highest Bid</p>
+                                        <p class="price_e">0.33 wETH</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card card_1">
+                        <img src="./card_ph5.png">
+                        <div class="card-body ps-4">
+                            <h4 class="card-title title2 pt-2">Colorful Dog 0356</h4>
+                            <div class="d-flex gap-3 mt-3">
+                                <img src="./mini_pro5.png">
+                                <p class="card-text card_text">Keepitreal</p>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div>
+                                        <p class="mb-2 pt-4 card_price">Price</p>
+                                        <p class="price_e">1.63 ETH</p>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 text-end pe-3">
+                                    <div>
+                                        <p class="mb-2 pt-4 card_price">Highest Bid</p>
+                                        <p class="price_e">0.33 wETH</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card card_1">
+                        <img src="./card_ph6.png">
+                        <div class="card-body ps-4">
+                            <h4 class="card-title title2 pt-2">Dancing Robot 0312</h4>
+                            <div class="d-flex gap-3 mt-3">
+                                <img src="./mini_pro6.png">
+                                <p class="card-text card_text">Robotica</p>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div>
+                                        <p class="mb-2 pt-4 card_price">Price</p>
+                                        <p class="price_e">1.63 ETH</p>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 text-end pe-3">
+                                    <div>
+                                        <p class="mb-2 pt-4 card_price">Highest Bid</p>
+                                        <p class="price_e">0.33 wETH</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    
+        <!-- Cards Row N3 for desktop-->
+            <div class="row mt-5">
+                <div class="col-md-4">
+                    <div class="card card_1">
+                        <img src="./card_ph7.png">
+                        <div class="card-body ps-4">
+                            <h4 class="card-title title2 pt-2">Cherry Blossom Girl 035</h4>
+                            <div class="d-flex gap-3 mt-3">
+                                <img src="./mini_pro7.png">
+                                <p class="card-text card_text">MoonDancer</p>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div>
+                                        <p class="mb-2 pt-4 card_price">Price</p>
+                                        <p class="price_e">1.63 ETH</p>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 text-end pe-3">
+                                    <div>
+                                        <p class="mb-2 pt-4 card_price">Highest Bid</p>
+                                        <p class="price_e">0.33 wETH</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card card_1">
+                        <img src="./card_ph8.png">
+                        <div class="card-body ps-4">
+                            <h4 class="card-title title2 pt-2">Space Travel</h4>
+                            <div class="d-flex gap-3 mt-3">
+                                <img src="./mini_pro8.png">
+                                <p class="card-text card_text">NebulaKid</p>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div>
+                                        <p class="mb-2 pt-4 card_price">Price</p>
+                                        <p class="price_e">1.63 ETH</p>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 text-end pe-3">
+                                    <div>
+                                        <p class="mb-2 pt-4 card_price">Highest Bid</p>
+                                        <p class="price_e">0.33 wETH</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card card_1">
+                        <img src="./card_ph9.png">
+                        <div class="card-body ps-4">
+                            <h4 class="card-title title2 pt-2">Sunset Dimension</h4>
+                            <div class="d-flex gap-3 mt-3">
+                                <img src="./mini_pro9.png">
+                                <p class="card-text card_text">Animakid</p>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div>
+                                        <p class="mb-2 pt-4 card_price">Price</p>
+                                        <p class="price_e">1.63 ETH</p>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 text-end pe-3">
+                                    <div>
+                                        <p class="mb-2 pt-4 card_price">Highest Bid</p>
+                                        <p class="price_e">0.33 wETH</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    
+        <!-- Cards Row N4 for desktop-->
+            <div class="row mt-5">
+                <div class="col-md-4">
+                    <div class="card card_1">
+                        <img src="./card_ph10.png">
+                        <div class="card-body ps-4">
+                            <h4 class="card-title title2 pt-2">Desert Walk</h4>
+                            <div class="d-flex gap-3 mt-3">
+                                <img src="./mini_pro10.png">
+                                <p class="card-text card_text">Catch 22</p>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div>
+                                        <p class="mb-2 pt-4 card_price">Price</p>
+                                        <p class="price_e">1.63 ETH</p>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 text-end pe-3">
+                                    <div>
+                                        <p class="mb-2 pt-4 card_price">Highest Bid</p>
+                                        <p class="price_e">0.33 wETH</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card card_1">
+                        <img src="./card_ph11.png">
+                        <div class="card-body ps-4">
+                            <h4 class="card-title title2 pt-2">IceCream Ape 0324</h4>
+                            <div class="d-flex gap-3 mt-3">
+                                <img src="./mini_pro11.png">
+                                <p class="card-text card_text">Ice Ape Club</p>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div>
+                                        <p class="mb-2 pt-4 card_price">Price</p>
+                                        <p class="price_e">1.63 ETH</p>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 text-end pe-3">
+                                    <div>
+                                        <p class="mb-2 pt-4 card_price">Highest Bid</p>
+                                        <p class="price_e">0.33 wETH</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card card_1">
+                        <img src="./card_ph12.png">
+                        <div class="card-body ps-4">
+                            <h4 class="card-title title2 pt-2">Colorful Dog 0344</h4>
+                            <div class="d-flex gap-3 mt-3">
+                                <img src="./mini_pro12.png">
+                                <p class="card-text card_text">PuppyPower</p>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div>
+                                        <p class="mb-2 pt-4 card_price">Price</p>
+                                        <p class="price_e">1.63 ETH</p>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 text-end pe-3">
+                                    <div>
+                                        <p class="mb-2 pt-4 card_price">Highest Bid</p>
+                                        <p class="price_e">0.33 wETH</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- N1 Card for MOBILE-->
+    <div class="container-fluid"
+        style="background: hsla(0, 0%, 23%, 1);">
+        <div class="container d-block d-md-none">
+            <!--card N1-->
+            <div class="row justify-content-center pt-3">
+                <div class="col-11">
+                    <div class="card card_1">
+                        <img src="./card_ph1_mob.png">
+                        <div class="card-body ps-3">
+                            <h4 class="card-title title2 pt-2">Magic Mushroom 0324</h4>
+                            <div class="d-flex gap-3 mt-3">
+                                <img src="./mini_pro1_mob.png">
+                                <p class="card-text card_text">Shroomie</p>
+                            </div>
+                            <div class="row justify-content-between align-items-end">
+                                <div class="col-4">
+                                    <div>
+                                        <p class="mb-2 pt-4 card_price">Price</p>
+                                        <p class="price_e_mobile">1.63 ETH</p>
+                                    </div>
+                                </div>
+                                <div class="col-6 mb-0 text-end">
+                                    <div>
+                                        <p class="mb-2 pt-4 card_price">Highest Bid</p>
+                                        <p class="price_e_mobile">0.33 wETH</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--card N2-->
+            <div class="row justify-content-center pt-4">
+                <div class="col-11">
+                    <div class="card card_1">
+                        <img src="./card_ph2_mob.png">
+                        <div class="card-body ps-3">
+                            <h4 class="card-title title2 pt-2">Happy Robot 024</h4>
+                            <div class="d-flex gap-3 mt-3">
+                                <img src="./mini_pro2-3_mob.png">
+                                <p class="card-text card_text">BeKind2Robots</p>
+                            </div>
+                            <div class="row justify-content-between align-items-end">
+                                <div class="col-4">
+                                    <div>
+                                        <p class="mb-2 pt-4 card_price">Price</p>
+                                        <p class="price_e_mobile">1.63 ETH</p>
+                                    </div>
+                                </div>
+                                <div class="col-6 mb-0 text-end">
+                                    <div>
+                                        <p class="mb-2 pt-4 card_price">Highest Bid</p>
+                                        <p class="price_e_mobile">0.33 wETH</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--card N3-->
+            <div class="row justify-content-center pt-4">
+                <div class="col-11">
+                    <div class="card card_1">
+                        <img src="./card_ph3_mob.png">
+                        <div class="card-body ps-3">
+                            <h4 class="card-title title2 pt-2">Happy Robot 0324</h4>
+                            <div class="d-flex gap-3 mt-3">
+                                <img src="./mini_pro2-3_mob.png">
+                                <p class="card-text card_text">BeKind2Robots</p>
+                            </div>
+                            <div class="row justify-content-between align-items-end">
+                                <div class="col-4">
+                                    <div>
+                                        <p class="mb-2 pt-4 card_price">Price</p>
+                                        <p class="price_e_mobile">1.63 ETH</p>
+                                    </div>
+                                </div>
+                                <div class="col-6 mb-0 text-end">
+                                    <div>
+                                        <p class="mb-2 pt-4 card_price">Highest Bid</p>
+                                        <p class="price_e_mobile">0.33 wETH</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--card N4-->
+            <div class="row justify-content-center pt-4">
+                <div class="col-11">
+                    <div class="card card_1">
+                        <img src="./card_ph4_mob.png">
+                        <div class="card-body ps-3">
+                            <h4 class="card-title title2 pt-2">Designer Bear</h4>
+                            <div class="d-flex gap-3 mt-3">
+                                <img src="./mini_pro4_mob.png">
+                                <p class="card-text card_text">Mr Fox</p>
+                            </div>
+                            <div class="row justify-content-between align-items-end">
+                                <div class="col-4">
+                                    <div>
+                                        <p class="mb-2 pt-4 card_price">Price</p>
+                                        <p class="price_e_mobile">1.63 ETH</p>
+                                    </div>
+                                </div>
+                                <div class="col-6 mb-0 text-end">
+                                    <div>
+                                        <p class="mb-2 pt-4 card_price">Highest Bid</p>
+                                        <p class="price_e_mobile">0.33 wETH</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--card N5-->
+            <div class="row justify-content-center pt-4">
+                <div class="col-11">
+                    <div class="card card_1">
+                        <img src="./card_ph5_mob.png">
+                        <div class="card-body ps-3">
+                            <h4 class="card-title title2 pt-2">Colorful Dog 0324</h4>
+                            <div class="d-flex gap-3 mt-3">
+                                <img src="./mini_pro5_mob.png">
+                                <p class="card-text card_text">Keepitreal</p>
+                            </div>
+                            <div class="row justify-content-between align-items-end">
+                                <div class="col-4">
+                                    <div>
+                                        <p class="mb-2 pt-4 card_price">Price</p>
+                                        <p class="price_e_mobile">1.63 ETH</p>
+                                    </div>
+                                </div>
+                                <div class="col-6 mb-0 text-end">
+                                    <div>
+                                        <p class="mb-2 pt-4 card_price">Highest Bid</p>
+                                        <p class="price_e_mobile">0.33 wETH</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <hr class="line_N2">
+        </div>
+    </div>
+
+    <!-- Footer section For Desktop -->
+    <div class="container-fluid d-md-block d-none"
+        style="background: hsla(0, 0%, 23%, 1); height: 400px">
+        <div class="container">
+            <div class="row row_space justify-content-center">
+
+                <!--1-->
+                <div class="col-md-4">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <img src="./Storefront.png">
+                            <span class="footer_header ps-1">NFT Marketplace</span>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-8">
+                            <p class="footer_text mt-4">
+                                NFT marketplace UI created<br> with Anima for Figma.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-8">
+                            <p class="footer_text mt-3">Join our community</p>
+                        </div>
+                    </div>
+                    <div class="row gap-2">
+                        <div class="col-md-1">
+                            <img src="./DiscordLogo.png">
+                        </div>
+                        <div class="col-md-1">
+                            <img src="./YoutubeLogo.png">
+                        </div>
+                        <div class="col-md-1">
+                            <img src="./TwitterLogo.png">
+                        </div>
+                        <div class="col-md-1">
+                            <img src="./InstagramLogo.png">
+                        </div>
+                    </div>
+                </div>
+    
+                <!--2-->
+                <div class="col-md-3">
+                    <div class="row">
+                        <div class="col-md-2">
+                            <h5 class="footer_header mb-4">Explore</h5>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-2">
+                            <a class="footer_text a_text" href="#">Marketplace</a>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-2">
+                            <a class="footer_text a_text" href="#">Rankings</a>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-8">
+                            <a class="footer_text a_text" href="#">Connect a wallet</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!--3-->
+                <div class="col-md-4">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <h5 class="footer_header mb-4">
+                                Join our weekly digest
+                            </h5>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-10">
+                            <p class="footer_text">
+                                Get exclusive promotions & updates<br> straight to your inbox.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="row mt-3">
+                        <div class="col-md-12 position-relative">
+                            <input class="email1 ps-3" type="email" placeholder="Enter your email here">
+                            <button type="button" class="button3_mobile position-absolute end-0">
+                                <img src="./EnvelopeSimple.png">
+                                <a class="button_subscribe ps-1" href="#">Subscribe</a>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+    
+            </div>
+            <!-- border & copyright-->
+            <hr class="hr_footer mt-5">
+            <div class="row">
+                <div class="col-md-12 ms-3">
+                    <p class="copyR_footer mt-3">
+                        Ⓒ NFT Market. Use this template freely.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer Section For mobile -->
+    <div class="container-fluid d-block d-md-none"
+    style="background: hsla(0, 0%, 23%, 1); height: 100%;">
+        <div class="container">
+            <div class="row row_space justify-content-center">
+
+                <div class="col-md-4">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <img src="./Storefront.png">
+                            <span class="footer_header ps-1">NFT Marketplace</span>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-8">
+                            <p class="footer_text mt-4">
+                                NFT marketplace UI created with Anima<br>for Figma.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-8">
+                            <p class="footer_text mt-1">Join our community</p>
+                        </div>
+                    </div>
+                    <div class="row mt-2">
+                        <div class="col-10 d-flex gap-3">
+                            <img src="./DiscordLogo.png">
+                            <img src="./YoutubeLogo.png">
+                            <img src="./TwitterLogo.png">
+                            <img src="./InstagramLogo.png">
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="col-md-3">
+                    <div class="row">
+                        <div class="col-md-2">
+                            <h5 class="footer_header mb-4 mt-4">Explore</h5>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-2">
+                            <a class="footer_text a_text" href="#">Marketplace</a>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-2">
+                            <a class="footer_text a_text" href="#">Rankings</a>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-8">
+                            <a class="footer_text a_text" href="#">Connect a wallet</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <h5 class="footer_header mt-4 mb-4">
+                                Join our weekly digest
+                            </h5>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-10">
+                            <p class="footer_text">
+                                Get exclusive promotions & updates<br> straight to your inbox.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row mt-3">
+                        <div class="col-12 mt-3">
+                            <input class="input_mail ps-3" type="email" placeholder="Enter Your Email Address">
+                        </div>
+                    </div>
+                    <div class="row pb-3">
+                        <div class="col-12 mt-3">
+                            <button type="button" class="button_subscribe_mobile">
+                                <img src="./EnvelopeSimple.png">
+                                <a class="button_subscribe ps-1" href="#">Subscribe</a>
+                            </button>
+                        </div>
+                    </div>
+
+            </div>
+            <hr class="hr_footer">
+            <div class="row">
+                <div class="col-12 ms-1">
+                    <p class="copyR_footer pt-3">
+                        Ⓒ NFT Market. Use this template freely.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
